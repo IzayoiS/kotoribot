@@ -65,7 +65,7 @@ async def help(ctx):
     embed.add_field(name="👑Owner👑", value="Kick\nBan\nRero\nGiverole", inline=True)
     await ctx.send(embed=embed)
 # ================= Help ================= #
-# ✨👑💎
+
 # ================= Music ================= #
 # ================= Play/Leave ================= #
 # @bot.command(pass_context=True)
@@ -92,4 +92,4 @@ async def help(ctx):
 
 bot.load_extension('cogs.mod')
 
-bot.run('NDgwNzcwMDk4MTUyNjAzNjQ4.Xwj88A.VgMY0Krb_MGt0Ynwcj7Zb_mOgl4')
+bot.run('BOT TOKEN')
