@@ -14,7 +14,7 @@ class mod(commands.Cog):
 	@commands.command()
 	@commands.has_permissions(kick_members=True)
 	@commands.is_owner()
-	@is_in_guild(453275503919628299)
+	@is_in_guild(YOUR GUILD ID)
 	async def kick(self, ctx, member: discord.Member, *, reason="No reason"):
 		await member.kick(reason=reason)
 		await ctx.send(f"{member.mention} Has been kick by {ctx.author.mention}. [{reason}]")
@@ -56,9 +56,9 @@ class mod(commands.Cog):
 	@commands.command()
 	@commands.has_permissions(manage_roles=True)
 	@commands.is_owner()
-	@is_in_guild(453275503919628299)
+	@is_in_guild(YOUR GUILD ID)
 	async def rero(self, ctx, *,role: discord.Role):
-	    if ctx.author.id == 444797124656365569:
+	    if ctx.author.id == YOUR GUILD ID:
 	        await role.delete()
 	        await ctx.send(f'I **yeeted** {role}!')
 
@@ -72,7 +72,7 @@ class mod(commands.Cog):
 	@commands.command(pass_context=True)
 	@commands.has_permissions(manage_roles=True)
 	@commands.is_owner()
-	@is_in_guild(453275503919628299)
+	@is_in_guild(YOUR GUILD ID)
 	async def giverole(ctx, user: discord.Member, role: discord.Role):
 	    await user.add_roles(role)
 	    await ctx.send(f"hey {ctx.author.name}, {user.name} Success add role: {role.name}")
